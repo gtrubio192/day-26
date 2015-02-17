@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Hello Angular</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<!--     directives (ng-app) = define or use these 'directives' to enhance our app-->
+	<body ng-app='app'>
+<!--  fills in div as you go    -->
+<!--
+		<input type="text" ng-model="name">
+		<div>Hello {{ name }}</div>
+        <br><br>
+        <hr>
+-->
+<!--  create a link. Type in valid url"http://..... .com      -->
+<!--
+        <input type="text" ng-model="url">
+        <a ng-href="{{url}}">Click me</a>
+        <br><br>
+        <hr>
+-->
+
+<!--    ORRR.... create a link. Type in valid url "..... .com      -->
+<!--
+        <input type="text" ng-model="url">
+        <a ng-href="http://{{url}}">Click me</a>
+        <br><br>
+        <hr>
+-->
+
+<!--   Can only enter in text box if checkbox is checked     -->
+<!--
+        <label>
+            <input type="checkbox" ng-model="comments">
+            Check to add some comments
+        </label>
+        <textarea ng-disabled="!comments"></textarea>
+-->
+<!--        <hr>-->
+<!-- Controller acts as a scoping tool. ng-models declared inside of an ng-controller CANT be accessed outside of its scope -->
+        <div ng-controller="LoadingButtonCtrl">
+            <button ng-model="buttonText" ng-click="click()" ng-disabled='buttonDisabled'>{{buttonText}}</button>
+        </div>
+        
+        
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src='scripts/controllers/loadingButton.js'></script>
+	</body>
+</html>
