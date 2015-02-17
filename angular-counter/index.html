@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Increment Count</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            #button{
+                margin: 0 auto;
+                text-align: center;
+                position:absolute;
+                top: 50%;
+                left: 50%;
+            }
+            body{
+                background: url('http://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png') no-repeat center center fixed;
+                -webkit-background-size: 85%;
+                -moz-background-size: 85%;
+                background-size: 85%;
+                -o-background-size: 85%;
+            }
+        </style>
+	</head>
+	<body ng-app='app'>
+        <div id='button' ng-controller="IncrementButtonCtrl">
+           <button class="btn btn-primary" ng-model="buttonText" ng-click="click()">
+              {{buttonText}}
+            </button>     
+        </div>
+        
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src='scripts/controllers/loadingButton.js'></script>
+	</body>
+</html>
