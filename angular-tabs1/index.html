@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tabs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href='bower_components/bootstrap/dist/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.0/angular-material.min.css">
+
+        <link rel="stylesheet" href='styles/main.css'>
+        
+    </head>
+    <body ng-app="tabsDemo1">
+        <div ng-controller="AppCtrl">
+            <nav class="nav navbar-default">
+				<a href="#" ng-click="tab = 1">Tab 1</a>
+				<a href="#" ng-click="tab = 2">Tab 2</a>
+				<a href="#" ng-click="tab = 3">Tab 3</a>
+			</nav>
+            
+            <div ng-show='tab === 1'>
+                <p>
+                Odio meh pour-over, ethical anim Vice distillery officia assumenda. Farm-to-table tempor gastropub mustache ullamco Odd Future, irony Blue Bottle excepteur tattooed placeat Echo Park. Deep v farm-to-table brunch, Thundercats sed Banksy put a bird on it ex organic ugh cold-pressed fap Kickstarter High Life. 
+                </p>
+            </div>
+            <div ng-show='tab === 2'>
+                <p>
+                Cold-pressed kitsch Kickstarter YOLO, pork belly stumptown literally Shoreditch whatever keytar you probably haven't heard of them cornhole gluten-free. Four loko messenger bag exercitation, cred biodiesel assumenda Blue Bottle adipisicing kitsch twee Kickstarter kogi veniam. 
+                </p>
+            </div>
+            <div ng-show='tab === 3'>
+                <p>
+                Enim placeat chia Vice salvia next level, vinyl nostrud semiotics leggings retro chillwave. Distillery Portland eu anim keytar sed.
+
+Letterpress Vice pug tempor non duis. PBR et 8-bit odio, cornhole sriracha aliqua ex Kickstarter art party dreamcatcher. Tote bag ad vero, plaid skateboard adipisicing disrupt. 
+                </p>
+            </div>
+          
+        </div>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.7.0/angular-material.min.js"></script>
+
+        <script type="text/javascript" src="scripts/app.js"></script>
+
+        <script type="text/javascript" src="scripts/controllers.js"></script>
+    </body>
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html ng-app="basic">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tabs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href='bower_components/bootstrap/dist/css/bootstrap.min.css'>
+
+    </head>
+    <body>
+        <div ng-controller="BasicCtrl">
+            
+          <tabset justified="true">
+            <tab heading="Justified">Justified content</tab>
+            <tab heading="SJ">Short Labeled Justified content</tab>
+            <tab heading="Long Justified">Long Labeled Justified content</tab>
+          </tabset>
+            <div ng-model='tabs1' ng-click='tab1()'>
+                <button class="btn"> Here</button> 
+            </div>
+            <div ng-model='tabs2' ng-click='tab2()'>
+                <button class="btn"> tHere</button> 
+            </div>
+            <div ng-model='tabs3' ng-click='tab3()'>
+                <button class="btn"> anywHere</button> 
+            </div>
+            
+            <div ng-switch on="tabs1">
+                  <div ng-switch-when="here">Here Div</div>
+            </div>
+            <div ng-switch on="tabs2">
+                  <div ng-switch-when="there">There Div</div>
+            </div>
+            <div ng-switch on="tabs3">
+                  <div ng-switch-when="anywhere">Anywhere Div</div>
+            </div>
+            
+        </div>
+
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/js/tab.js"></script>
+
+        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="scripts/services.js"></script>
+        <script type="text/javascript" src="scripts/controllers.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>-->
