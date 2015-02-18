@@ -1,6 +1,7 @@
 // $scope && $window are special keywords
 // $scope is actually an OBJECT 
-app.controller('IncrementButtonCtrl', function($scope, $timeout){
+angular.module('app.controllers',[]).controller('IncrementButtonCtrl', 
+  function($scope, $timeout){
     // will populate in html
     $scope.buttonText = 'Click Me';
     $scope.count = 0;    
@@ -9,6 +10,12 @@ app.controller('IncrementButtonCtrl', function($scope, $timeout){
         console.log('Incrementing count' );
         $scope.count++;
         $scope.buttonText = $scope.count + ' Likes';
+        if($scope.count === 1)
+        {
+             $scope.buttonText = $scope.count + ' Like';
+        }
+        
+       
 
 //        $timeout(function() { 
 //            console.log('timeout') 

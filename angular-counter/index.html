@@ -26,8 +26,10 @@
 	</head>
 	<body ng-app='app'>
         <div id='button' ng-controller="IncrementButtonCtrl">
-           <button class="btn btn-primary" ng-model="buttonText" ng-click="click()">
-              {{buttonText}}
+<!--            ng-bind is controlling whole html element. 'something' and 'anything' will be overwritten. Dont need {{ }} bc its redundant -->
+<!--            ng-model has 2 way interaction, good for forms not buttons. -->
+           <button class="btn btn-primary"  ng-click="click()">
+<!--              Something {{buttonText}} anything--> {{buttonText}}
             </button>     
         </div>
         
